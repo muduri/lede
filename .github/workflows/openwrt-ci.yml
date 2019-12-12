@@ -56,7 +56,6 @@ jobs:
       
       - name: Importing additional packages and themes
         run: |
-          cd lede
           cd package
           mkdir additional_packages
           cd additional_packages

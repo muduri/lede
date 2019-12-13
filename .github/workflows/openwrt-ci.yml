@@ -63,6 +63,8 @@ jobs:
           mkdir additional_packages
           cd additional_packages
           git clone https://github.com/rosywrt/luci-theme-rosy  
+          git clone https://github.com/SoftEtherVPN/SoftEtherVPN_Stable
+          git clone https://github.com/kuoruan/luci-app-v2ray
          
       - name: Update feeds
         run: |
@@ -177,6 +179,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-syncdial=y
+          CONFIG_PACKAGE_luci-app-v2ray=y
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           EOF
 
